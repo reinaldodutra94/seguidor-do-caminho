@@ -1,0 +1,238 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f2eb;
+    background-image: url("8268513-austrian-national-library-4868492.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #f2e8d8;
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+/* =========================
+   CABEÇALHO
+   ========================= */
+
+header,
+.cabecalho {
+    background-color: transparent;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.cabecalho-conteudo {
+    max-width: 900px;
+    margin: auto;
+}
+
+.logo-imagem {
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6));
+}
+
+/* =========================
+   PÁGINA INICIAL
+   ========================= */
+
+main.inicio {
+    margin: 30px auto 60px auto;
+    padding: 0 15px;
+}
+
+.tabela-container {
+    max-width: 100%;
+    width: 520px;
+    margin: 0 auto;
+    background-color: #3d1c14;
+    border: 5px double #b88a44;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.tabela-cabecalho-autor {
+    background-color: #6b2d1d;
+    color: #f7ebd7;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.15rem;
+    padding: 14px 10px;
+    border-bottom: 2px solid #b88a44;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.tabela-sermoes {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-sermoes tr {
+    transition: background-color 0.2s ease;
+}
+
+.tabela-sermoes tr:nth-child(odd) {
+    background-color: #3b1a13;
+}
+
+.tabela-sermoes tr:nth-child(even) {
+    background-color: #31150f;
+}
+
+.tabela-sermoes tr:hover {
+    background-color: #4a2319;
+}
+
+.tabela-sermoes td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #54281c;
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+.col-num {
+    width: 12%;
+    color: #c9a468;
+    text-align: center;
+    font-weight: bold;
+}
+
+.col-titulo {
+    width: 68%;
+    text-align: left;
+}
+
+.col-link {
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabela-sermoes a {
+    color: #f2e8d8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.tabela-sermoes a:hover {
+    color: #e0b353;
+    text-decoration: underline;
+}
+
+.col-link a {
+    color: #c9a468;
+    letter-spacing: 0.5px;
+}
+
+.col-link a:hover {
+    color: #ffffff;
+}
+
+/* =========================
+   PÁGINA DO SERMÃO
+   ========================= */
+
+main.sermao {
+    width: 90%;
+    max-width: 750px;
+    margin: 40px auto 60px auto;
+    padding: 45px 50px;
+    box-sizing: border-box;
+    background-color: #3d1c14;
+    border: 4px double #b88a44;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    color: #f2e8d8;
+}
+
+.titulo-sermao {
+    border-bottom: 1px solid #b88a44;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+main.sermao h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #f7ebd7;
+}
+
+.autor-sermao {
+    color: #c9a468;
+    font-size: 17px;
+}
+
+main.sermao p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+    color: #f2e8d8;
+}
+
+/* =========================
+   NAVEGAÇÃO
+   ========================= */
+
+.navegacao {
+    border-top: 1px solid #b88a44;
+    margin-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacao a {
+    color: #c9a468;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navegacao a:hover {
+    color: #e0b353;
+    text-decoration: underline;
+}
+
+/* =========================
+   DISPOSITIVOS MÓVEIS
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .logo-imagem {
+        max-width: 180px;
+    }
+
+    main.inicio {
+        padding: 0 10px;
+    }
+
+    .tabela-sermoes td {
+        padding: 10px 6px;
+        font-size: 0.88rem;
+    }
+
+    main.sermao {
+        margin: 20px auto;
+        padding: 25px 20px;
+    }
+
+    main.sermao h2 {
+        font-size: 24px;
+    }
+
+    main.sermao p {
+        font-size: 16px;
+    }
+}
