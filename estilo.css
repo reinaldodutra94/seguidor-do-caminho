@@ -35,7 +35,7 @@ header,
 
 .logo-imagem {
     display: block;
-    max-width: 600px;
+    max-width: 400px;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -164,10 +164,9 @@ main.sermao {
 }
 
 main.sermao h2 {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 8px;
     color: #f7ebd7;
-    text-align: center;
 }
 
 .autor-sermao {
@@ -176,7 +175,7 @@ main.sermao h2 {
 }
 
 main.sermao p {
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.8;
     margin-bottom: 22px;
     color: #f2e8d8;
@@ -213,7 +212,7 @@ main.sermao p {
 @media (max-width: 600px) {
 
     .logo-imagem {
-        max-width: 220px;
+        max-width: 180px;
     }
 
     main.inicio {
@@ -231,12 +230,11 @@ main.sermao p {
     }
 
     main.sermao h2 {
-        font-size: 26px;
-        text-align: center;
+        font-size: 24px;
     }
 
     main.sermao p {
-        font-size: 17px;
+        font-size: 16px;
         text-align: justify;
     }
 }
